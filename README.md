@@ -1,7 +1,9 @@
 # Revealing the Gap in Human and VLM Scene Perception through Counterfactual Semantic Saliency
 
 This repository contains the code and processed data needed to reproduce
-every figure and table in the submission.
+the figure and table in the submission.
+
+Counterfactual Image dataset is not needed to reproduce the results, if you want to check the image data we used for the paper, you can download the dataset from the following link:
 
 [Counterfactual Image dataset (Zenodo, anonymized preview link)](https://zenodo.org/records/20151292?preview=1&token=eyJhbGciOiJIUzUxMiIsImlhdCI6MTc3ODY0OTg3MCwiZXhwIjoxNzk2ODYwNzk5fQ.eyJpZCI6Ijg5NjQwMGEzLTY3YzMtNDI1ZC1iZDA2LWVlYmI3MzkyMTUwZCIsImRhdGEiOnt9LCJyYW5kb20iOiIzOGQwNjJiZThmZjczMGViYmY1ZDRkNDYxMjMzYjZlNiJ9.555ovV_fM1c0G57Ub3V_4AYu6XWRvQu2a8QDvOWHKtGWnLPDcKxjA0mb7ODZN1VbZJjYgfqaksmXcGKPymwZKg)
 
@@ -13,23 +15,23 @@ pip install numpy pandas scipy matplotlib pillow
 bash reproduce.sh
 ```
 
-The full pipeline takes roughly **10 minutes** on a modern workstation.
-When it finishes, every machine-generated artefact (final CSVs and
+The full pipeline takes roughly **10 minutes** on a modern workstation (CPU model: AMD Ryzen 9 7900X3D ).
+When it finishes, every generated results (final CSVs and
 figures) is grouped under `./results/`.
 
 ## Mapping to the paper
 
 Everything inside `results/` is organized so that each subfolder maps
-to a single artefact in the paper:
+to a single result in the paper:
 
-| Path                                | Paper artefact | Contents                                                                              |
+| Path                                | Paper result | Contents                                                                              |
 |-------------------------------------|----------------|---------------------------------------------------------------------------------------|
 | `results/kendall_top1_acc/`         | **Figure 4**   | `kendall_top1_acc_bars.{png,pdf}` — Top1-Acc bar plot (one of the two Figure 4 panels). |
 | `results/kendall_mean_tau/`         | **Figure 4**   | `kendall_mean_tau_bars.{png,pdf}` — mean Kendall-τ bar plot (the other Figure 4 panel). |
 | `results/correlation_bars/`         | **Figure 5**   | The four `correlation_*.{png,pdf}` panels (mask area, centroid distance, person, max-GBVS), plus the CSVs that drive them. |
 | `results/regression_permutation/`   | **Table 1**    | `permutation_summary.{csv,txt}` — rows in this CSV are the entries reported in Table 1 of the paper. |
 
-## Layout
+## Structure
 
 ```
 .
