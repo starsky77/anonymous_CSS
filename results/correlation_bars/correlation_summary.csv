@@ -1,0 +1,6 @@
+predictor,predictor_label,n,pearson_r,spearman_rho
+mask_area_pixels,mask area (foreground pixels),1306,-0.3252552097625523,-0.35127685916599966
+center_distance_pixels,distance mask centroid to image center (pixels),1306,0.21344592205140928,0.20215317661124793
+person_bin,"Person (Y=1, N=0)",1306,-0.35566208583047426,-0.3361653827876779
+max_gbvs,max GBVS inside mask (0–255),1306,-0.28959851719532403,-0.2878148225529632
+mean_gbvs,mean GBVS inside mask,1306,-0.13962200574917757,-0.1483317245546203

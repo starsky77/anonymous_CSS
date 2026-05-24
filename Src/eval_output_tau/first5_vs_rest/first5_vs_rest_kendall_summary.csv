@@ -1,0 +1,2 @@
+comparison,input_csv,n_images,n_valid_tau,mean_kendall_tau,std_kendall_tau,lowest_score_mask_same_count,lowest_score_mask_same_accuracy
+first5_vs_rest,CSS_result/Cache/human_filtered_10/scene_description_human_filtered_all_10_with_mean_similarity_score.csv,307,307,0.5752442996742672,0.42163129877322875,224,0.7296416938110749

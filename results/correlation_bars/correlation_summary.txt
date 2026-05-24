@@ -1,0 +1,27 @@
+Correlation with mean_similarity_score
+n_masks (with score, nonzero mask): 1306
+n_masks missing on disk: 0
+n_masks with Animacy/Person labels: 1306
+n_masks with max_gbvs: 1306
+n_masks with mean_gbvs: 1306
+
+mask area (foreground pixels)
+  Pearson r  = -0.3252552097625523
+  Spearman ρ = -0.35127685916599966
+
+distance mask centroid to image center (pixels)
+  Pearson r  = 0.21344592205140928
+  Spearman ρ = 0.20215317661124793
+
+Person (Y=1, N=0)
+  Pearson r  = -0.35566208583047426
+  Spearman ρ = -0.3361653827876779
+
+max GBVS inside mask (0–255)
+  Pearson r  = -0.28959851719532403
+  Spearman ρ = -0.2878148225529632
+
+mean GBVS inside mask
+  Pearson r  = -0.13962200574917757
+  Spearman ρ = -0.1483317245546203
+

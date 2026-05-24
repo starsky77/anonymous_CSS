@@ -1,0 +1,22 @@
+Permutation test of univariate corr(gap_perm<P>, acc_gap)
+acc_gap = lowest_score_mask_same_accuracy - 0.7296
+n_masks aligned: 1306
+n_models: 19
+n_permutations: 10000
+
+mask_area_pixels  (mask area (foreground pixels))  metric=spearman, flip_sign=True
+  uni_pearson  observed=-0.6130  null_mean= 0.0023  null_std= 0.3193  z=-1.927  p_two_sided=0.0405  p_one_sided_greater=0.979  p_one_sided_less=0.0211  95%_null=[-0.5955,  0.5924]
+  uni_spearman observed=-0.6147  null_mean= 0.0017  null_std= 0.2759  z=-2.234  p_two_sided=0.0182  p_one_sided_greater=0.9912  p_one_sided_less=0.008999  95%_null=[-0.5319,  0.5222]
+
+center_distance_pixels  (centroid distance to center)  metric=spearman, flip_sign=False
+  uni_pearson  observed=-0.2296  null_mean=-0.0030  null_std= 0.3189  z=-0.711  p_two_sided=0.521  p_one_sided_greater=0.7366  p_one_sided_less=0.2635  95%_null=[-0.5923,  0.5807]
+  uni_spearman observed=-0.1497  null_mean=-0.0038  null_std= 0.2752  z=-0.530  p_two_sided=0.6117  p_one_sided_greater=0.6902  p_one_sided_less=0.3103  95%_null=[-0.5293,  0.5205]
+
+person_bin  (Person (Y/N))  metric=pearson, flip_sign=True
+  uni_pearson  observed=-0.1533  null_mean=-0.0014  null_std= 0.3247  z=-0.468  p_two_sided=0.6788  p_one_sided_greater=0.6603  p_one_sided_less=0.3398  95%_null=[-0.6007,  0.5999]
+  uni_spearman observed=-0.0678  null_mean= 0.0002  null_std= 0.2789  z=-0.244  p_two_sided=0.8328  p_one_sided_greater=0.5841  p_one_sided_less=0.4162  95%_null=[-0.5266,  0.5302]
+
+max_gbvs  (max GBVS in mask)  metric=spearman, flip_sign=True
+  uni_pearson  observed=-0.3746  null_mean=-0.0012  null_std= 0.3155  z=-1.184  p_two_sided=0.2615  p_one_sided_greater=0.8727  p_one_sided_less=0.1274  95%_null=[-0.5936,  0.5971]
+  uni_spearman observed=-0.2871  null_mean=-0.0003  null_std= 0.2727  z=-1.052  p_two_sided=0.3074  p_one_sided_greater=0.8483  p_one_sided_less=0.1526  95%_null=[-0.5178,  0.5249]
+
